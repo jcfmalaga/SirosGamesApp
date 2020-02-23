@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SirosGamesApp.SongsGame">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <Grid Grid.Row="0" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Image Source="CarlosBourque"
+                       Aspect="Fill"
+                       Grid.Column="0"
+                       Grid.Row="0"/>
+
+                <Label x:Name="lblCarlos" 
+                       Grid.Column="0"
+                       Grid.Row="1"
+                       Text="0"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"/>
+
+                <Stepper Value="0" 
+                         Minimum="0" 
+                         Maximum="100" 
+                         Increment="1" 
+                         Grid.Column="0"
+                         Grid.Row="2"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         ValueChanged="AddCarlos_ValueChanged" />
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Image Source="JuanCarlos"
+                       Aspect="Fill"
+                       Grid.Column="0"
+                       Grid.Row="0"/>
+                <Label x:Name="lblJuanCarlos" 
+                       Grid.Column="0"
+                       Grid.Row="1"
+                       Text="0"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"/>
+
+                <Stepper Value="0" 
+                         Minimum="0" 
+                         Maximum="100" 
+                         Increment="1" 
+                         Grid.Column="0"
+                         Grid.Row="2"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         ValueChanged="AddJuanCarlos_ValueChanged" />
+
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Image Source="Nacho"
+                       Aspect="Fill"
+                       Grid.Column="0"
+                       Grid.Row="0"/>
+                <Label x:Name="lblNacho" 
+                       Grid.Column="0"
+                       Grid.Row="1"
+                       Text="0"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"/>
+
+                <Stepper Value="0" 
+                         Minimum="0" 
+                         Maximum="100" 
+                         Increment="1" 
+                         Grid.Column="0"
+                         Grid.Row="2"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         ValueChanged="AddNacho_ValueChanged" />
+
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Image Source="Jose"
+                       Aspect="Fill"
+                       Grid.Column="0"
+                       Grid.Row="0"/>
+                <Label x:Name="lblJose" 
+                       Grid.Column="0"
+                       Grid.Row="1"
+                       Text="0"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"/>
+
+                <Stepper Value="0" 
+                         Minimum="0" 
+                         Maximum="100" 
+                         Increment="1" 
+                         Grid.Column="0"
+                         Grid.Row="2"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         ValueChanged="AddJose_ValueChanged" />
+
+            </Grid>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
