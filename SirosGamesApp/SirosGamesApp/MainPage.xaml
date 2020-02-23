@@ -15,7 +15,7 @@
                Aspect="AspectFit"
                Grid.Row="0"/>
 
-        <Label Text="Welcome to Siro's Games App"
+        <Label Text="Welcome to Siro's Games App!!"
                FontSize="Medium"
                Grid.Row="1"
            HorizontalOptions="Center"
